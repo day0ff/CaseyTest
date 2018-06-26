@@ -9,19 +9,11 @@
 
 <body>
   <article>
-    <div class="diagramm">
-      <div class="pie"><span>100%</span></div>
-      <span>Экстраверт</span>
-    </div>
-    <div class="diagramm">
-      <div class="pie"><span>100%</span></div>
-      <span>Экстраверт</span>
-    </div>
     <h1>Опросник Кейрси / Текст опросника</h1>
     <div id="container">
       <form id="questionnaire" name="Casey'sQuestionnaire">
-        <p><label for="fio"><b>ФИО: </b></label> <input type="text" name="fio" placeholder="Фамилия Имя Отчество"></p>
-        <p><label for="department"><b>Отдел:</b></label> <input type="text" name="department" placeholder="Отдел"></p>
+        <p><label for="fio"><b>ФИО: </b></label> <input type="text" id="fio" name="fio" placeholder="Фамилия Имя Отчество"></p>
+        <p><label for="department"><b>Отдел:</b></label> <input type="text" id="department" name="department" placeholder="Отдел"></p>
         <p><b>Инструкция:</b> Вам предлагается опросник для изучения типичных способов поведения и личностных характеристик. Опросник состоит из 70 утверждений (вопросов), каждое из которых имеет два продолжения (ответа). Подчеркиваем, что все ответы равноценны,
           правильных или неправильных здесь быть не может Ваша задача:# прочесть каждое из утверждений вместе с двумя его возможными продолжениями.# выбрать то продолжение, которое свойственно вам к большинстве жизненных ситуации.# вписать знак (+) в
           соответствующем квадрате регистрационного листа (он помешен после текста опросника).
@@ -88,7 +80,6 @@
               <li> <input type="radio" name="question10"> б) те события которые могут произойти</li>
             </ul>
           </li>
-          <!--
             <li> Оценивая поступки людей, вы больше учитываете:
               <ul>
                 <li> <input type="radio" name="question11"> а) требования закона, чем обстоятельства</li>
@@ -449,7 +440,6 @@
                 <li> <input type="radio" name="question70"> б) импульсивно, чем обдуманно</li>
               </ul>
             </li>
-            -->
         </ol>
         <button id="verify">Проверить</button>
       </form>

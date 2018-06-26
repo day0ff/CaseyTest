@@ -4,8 +4,9 @@
 
 .diagramm, .pie{
   width: 100px;
-  /* border: solid 1px green; */
+  float:left;
   text-align: center;
+  margin: 20px;
 }
 .diagramm span{
   font-weight: bolder;
