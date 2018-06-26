@@ -9,80 +9,86 @@
 
 <body>
   <article>
-    <h1>Опросник Кейрси/Текст опросника</h1>
-    <div id="bodyContent" class="mw-body-content">
-
-      <div class="mw-parser-output">
-        <form>
-          <p><b>ФИО ______________________________________________________________</b>
-          </p>
-          <p><b>Инструкция: Вам предлагается опросник для изучения типичных способов поведения и личностных характеристик. Опросник состоит из 70 утверждений (вопросов), каждое из которых имеет два продолжения (ответа). Подчеркиваем, что все ответы равноценны,
-            правильных или неправильных здесь быть не может Ваша задача:# прочесть каждое из утверждений вместе с двумя его возможными продолжениями.# выбрать то продолжение, которое свойственно вам к большинстве жизненных ситуации.# вписать знак (+)
-            в соответствующем квадрате регистрационного листа (он помешен после текста опросника).</b>
-          </p>
-          <p>Просьба работать в темпе, подолгу не задумываясь над ответами. Работайте последовательно, не пропуская вопросов.
-          </p>
-          <ol>
-            <li> В компании (на вечеринке) вы:
-              <ul>
-                <li> <input type="radio" name="question1"> а) общаетесь со многими, включая и незнакомцев</li>
-                <li> <input type="radio" name="question1"> б) общаетесь с немногими – вашими знакомыми</li>
-              </ul>
-            </li>
-            <li> Вы человек скорее:
-              <ul>
-                <li> <input type="radio" name="question2"> а) реалистичный, чем склонный теоретизировать</li>
-                <li> <input type="radio" name="question2"> б) склонный теоретизировать, чем реалистичный</li>
-              </ul>
-            </li>
-            <li> Как по-вашему, что хуже:
-              <ul>
-                <li> <input type="radio" name="question3"> а) «витать в обликах»</li>
-                <li> <input type="radio" name="question3"> б) придерживаться проторенной дорожки</li>
-              </ul>
-            </li>
-            <li> Вы более подвержены влиянию;
-              <ul>
-                <li> <input type="radio" name="question4"> а) принципов, законов</li>
-                <li> <input type="radio" name="question4"> б) эмоции, чувств</li>
-              </ul>
-            </li>
-            <li> Вы более склонны:
-              <ul>
-                <li> <input type="radio" name="question5"> а) убеждать</li>
-                <li> <input type="radio" name="question5"> б) затрагивать чувства</li>
-              </ul>
-            </li>
-            <li> Вы предпочитаете работать:
-              <ul>
-                <li> <input type="radio" name="question6"> а) выполняя все точно в срок</li>
-                <li> <input type="radio" name="question6"> б) не связывая себя определенными сроками</li>
-              </ul>
-            </li>
-            <li> Вы склонны делать выбор:
-              <ul>
-                <li> <input type="radio" name="question7"> а) довольно осторожно</li>
-                <li> <input type="radio" name="question7"> б) внезапно импульсивно</li>
-              </ul>
-            </li>
-            <li> В компании (на вечеринке) вы:
-              <ul>
-                <li> <input type="radio" name="question8"> а) остаетесь допоздна, не чувствуя усталости</li>
-                <li> <input type="radio" name="question8"> б) быстро утомляетесь и предпочитаете пораньше уйти</li>
-              </ul>
-            </li>
-            <li> Вас бoлee привлекают:
-              <ul>
-                <li> <input type="radio" name="question9"> а) здравомыслящие люди</li>
-                <li> <input type="radio" name="question9"> б) люди с богатым воображением</li>
-              </ul>
-            </li>
-            <li> Вам интереснее:
-              <ul>
-                <li> <input type="radio" name="question10"> а) то что происходит в действительности</li>
-                <li> <input type="radio" name="question10"> б) те события которые могут произойти</li>
-              </ul>
-            </li>
+    <div class="diagramm">
+      <div class="pie"><span>100%</span></div>
+      <span>Экстраверт</span>
+    </div>
+    <div class="diagramm">
+      <div class="pie"><span>100%</span></div>
+      <span>Экстраверт</span>
+    </div>
+    <h1>Опросник Кейрси / Текст опросника</h1>
+    <div id="container">
+      <form id="questionnaire" name="Casey'sQuestionnaire">
+        <p><label for="fio"><b>ФИО: </b></label> <input type="text" name="fio" placeholder="Фамилия Имя Отчество"></p>
+        <p><label for="department"><b>Отдел:</b></label> <input type="text" name="department" placeholder="Отдел"></p>
+        <p><b>Инструкция:</b> Вам предлагается опросник для изучения типичных способов поведения и личностных характеристик. Опросник состоит из 70 утверждений (вопросов), каждое из которых имеет два продолжения (ответа). Подчеркиваем, что все ответы равноценны,
+          правильных или неправильных здесь быть не может Ваша задача:# прочесть каждое из утверждений вместе с двумя его возможными продолжениями.# выбрать то продолжение, которое свойственно вам к большинстве жизненных ситуации.# вписать знак (+) в
+          соответствующем квадрате регистрационного листа (он помешен после текста опросника).
+        </p>
+        <p><b>Просьба работать в темпе, подолгу не задумываясь над ответами. Работайте последовательно, не пропуская вопросов.</b></p>
+        <ol>
+          <li> В компании (на вечеринке) вы:
+            <ul>
+              <li> <input type="radio" name="question1"> а) общаетесь со многими, включая и незнакомцев</li>
+              <li> <input type="radio" name="question1"> б) общаетесь с немногими – вашими знакомыми</li>
+            </ul>
+          </li>
+          <li> Вы человек скорее:
+            <ul>
+              <li> <input type="radio" name="question2"> а) реалистичный, чем склонный теоретизировать</li>
+              <li> <input type="radio" name="question2"> б) склонный теоретизировать, чем реалистичный</li>
+            </ul>
+          </li>
+          <li> Как по-вашему, что хуже:
+            <ul>
+              <li> <input type="radio" name="question3"> а) «витать в обликах»</li>
+              <li> <input type="radio" name="question3"> б) придерживаться проторенной дорожки</li>
+            </ul>
+          </li>
+          <li> Вы более подвержены влиянию;
+            <ul>
+              <li> <input type="radio" name="question4"> а) принципов, законов</li>
+              <li> <input type="radio" name="question4"> б) эмоции, чувств</li>
+            </ul>
+          </li>
+          <li> Вы более склонны:
+            <ul>
+              <li> <input type="radio" name="question5"> а) убеждать</li>
+              <li> <input type="radio" name="question5"> б) затрагивать чувства</li>
+            </ul>
+          </li>
+          <li> Вы предпочитаете работать:
+            <ul>
+              <li> <input type="radio" name="question6"> а) выполняя все точно в срок</li>
+              <li> <input type="radio" name="question6"> б) не связывая себя определенными сроками</li>
+            </ul>
+          </li>
+          <li> Вы склонны делать выбор:
+            <ul>
+              <li> <input type="radio" name="question7"> а) довольно осторожно</li>
+              <li> <input type="radio" name="question7"> б) внезапно импульсивно</li>
+            </ul>
+          </li>
+          <li> В компании (на вечеринке) вы:
+            <ul>
+              <li> <input type="radio" name="question8"> а) остаетесь допоздна, не чувствуя усталости</li>
+              <li> <input type="radio" name="question8"> б) быстро утомляетесь и предпочитаете пораньше уйти</li>
+            </ul>
+          </li>
+          <li> Вас бoлee привлекают:
+            <ul>
+              <li> <input type="radio" name="question9"> а) здравомыслящие люди</li>
+              <li> <input type="radio" name="question9"> б) люди с богатым воображением</li>
+            </ul>
+          </li>
+          <li> Вам интереснее:
+            <ul>
+              <li> <input type="radio" name="question10"> а) то что происходит в действительности</li>
+              <li> <input type="radio" name="question10"> б) те события которые могут произойти</li>
+            </ul>
+          </li>
+          <!--
             <li> Оценивая поступки людей, вы больше учитываете:
               <ul>
                 <li> <input type="radio" name="question11"> а) требования закона, чем обстоятельства</li>
@@ -443,9 +449,10 @@
                 <li> <input type="radio" name="question70"> б) импульсивно, чем обдуманно</li>
               </ul>
             </li>
-          </ol>
-        </form>
-      </div>
+            -->
+        </ol>
+        <button id="verify">Проверить</button>
+      </form>
     </div>
   </article>
   <script src=".js"></script>
